@@ -1,0 +1,58 @@
+{
+    "Cypress: Type Reference": {
+        "prefix": "cyref",
+        "body": [
+            "/// <reference types=\"cypress\" />"
+        ],
+        "description": "Cypress Type Reference"
+    },
+    "Cypress: add getData command": {
+        "prefix": "cyadd-get",
+        "body": [
+            "Cypress.Commands.add('getData', (attribute) => {",
+            "  return cy.get(`[data-test=\"\\${attribute}\"]`);",
+            "});$0"
+        ],
+        "description": "Cypress Command to get data-test selector"
+    },
+    "Cypress: on-task plugin": {
+        "prefix": "cyplugin",
+        "body": [
+            "const plugins = (on) => {",
+            "  on('task', {",
+            "    $0",
+            "  });",
+            "};",
+            "",
+            "export default plugins;"
+        ],
+        "description": "Cypress: on-task plugin"
+    },
+    "Gherkin: Given": {
+        "prefix": "gg",
+        "body": [
+            "Given('$1', () => {",
+            "    cy.pending();$0",
+            "});"
+        ],
+        "description": "Gherkin: Given"
+    },
+    "Gherkin: When": {
+        "prefix": "gw",
+        "body": [
+            "When('$1', () => {",
+            "    cy.pending();$0",
+            "});"
+        ],
+        "description": "Gherkin: When"
+    },
+    "Gherkin: Then": {
+        "prefix": "gt",
+        "body": [
+            "Then('$1', () => {",
+            "    cy.pending();$0",
+            "});"
+        ],
+        "description": "Gherkin: Then"
+    }
+}
