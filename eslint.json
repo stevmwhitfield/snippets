@@ -1,0 +1,17 @@
+{
+    "ESLint: Flat Config": {
+        "scope": "javascript",
+        "prefix": "esflat",
+        "body": [
+            "import globals from 'globals';",
+            "import pluginJs from '@eslint/js';",
+            "",
+            "export default [",
+            "    { languageOptions: { globals: globals.browser } },",
+            "    pluginJs.configs.recommended,",
+            "];",
+            ""
+        ],
+        "description": "ESLint: Flat Config"
+    }
+}
